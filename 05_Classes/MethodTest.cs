@@ -50,7 +50,8 @@ namespace _05_Classes
             double quotiant = calculator.Divide(21, 6);
 
         }
-        public void AgeCalculations()
+        [TestMethod]
+        public void AgeCalculator()
         {
             Calculator calculator = new Calculator();
             // Age
