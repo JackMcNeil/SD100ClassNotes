@@ -44,6 +44,7 @@ namespace _01_TypesAndVariables
             // Index starts at 0
             string thirdItem = stringArray[2];
             Console.WriteLine(thirdItem);
+            Console.WriteLine(stringArray[2]);
 
             stringArray[2] = "Good Morning";
             Console.WriteLine(stringArray[2]);
@@ -66,7 +67,7 @@ namespace _01_TypesAndVariables
             Console.WriteLine(firstInFirstOut.Peek());
 
             // Stacks
-            // Queue use LIFO
+            // Stacks use LIFO
             Stack<string> firstInLastOut = new Stack<string>();
 
             firstInLastOut.Push("I'm a bun");

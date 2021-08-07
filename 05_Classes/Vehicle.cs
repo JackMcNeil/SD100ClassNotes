@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _05_Classes
 {
-    public enum VehicleType {Car, Truck, Van, Spaceship, Plane}
+    public enum VehicleType {Car, Truck, Van, Spaceship, Plane, Motorcycle}
     public class Vehicle
     {
         public Vehicle() { }

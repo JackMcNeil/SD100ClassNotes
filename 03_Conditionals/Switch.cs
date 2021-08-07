@@ -9,7 +9,7 @@ namespace _03_Conditionals
         [TestMethod]
         public void SwitchCase()
         {
-            int input = 1;
+            int input = 11;
 
             switch (input)
             {
