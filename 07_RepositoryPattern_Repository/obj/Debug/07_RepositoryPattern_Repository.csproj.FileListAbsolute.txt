@@ -1,0 +1,6 @@
+C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\07_RepositoryPattern_Repository\bin\Debug\07_RepositoryPattern_Repository.dll
+C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\07_RepositoryPattern_Repository\bin\Debug\07_RepositoryPattern_Repository.pdb
+C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\07_RepositoryPattern_Repository\obj\Debug\07_RepositoryPattern_Repository.csproj.AssemblyReference.cache
+C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\07_RepositoryPattern_Repository\obj\Debug\07_RepositoryPattern_Repository.csproj.CoreCompileInputs.cache
+C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\07_RepositoryPattern_Repository\obj\Debug\07_RepositoryPattern_Repository.dll
+C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\07_RepositoryPattern_Repository\obj\Debug\07_RepositoryPattern_Repository.pdb

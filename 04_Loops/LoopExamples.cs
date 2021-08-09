@@ -17,6 +17,7 @@ namespace _04_Loops
                 //total = total + 3;
             }
 
+            total = 0;
             while (true)
             {
                 if (total == 10)
