@@ -132,7 +132,7 @@ namespace _09_StreamingContent_Console.UI
                 "6. TVMA\n" +
                 "7. TVG\n" +
                 "8. TVY\n");
-            Console.WriteLine("Maturity Rating: ");
+            Console.Write("Maturity Rating: ");
             string maturityInput = Console.ReadLine();
             int matuirtyId = int.Parse(maturityInput);
             content.MaturityRating = (MaturityRating)matuirtyId;
@@ -179,6 +179,8 @@ namespace _09_StreamingContent_Console.UI
                     content.GenreType = 0;
                     break;
             }
+
+            _repo.AddContentToDirectory(content);
         }
     }
 }
