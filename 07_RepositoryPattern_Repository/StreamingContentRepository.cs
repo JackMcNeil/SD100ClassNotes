@@ -8,7 +8,7 @@ namespace _07_RepositoryPattern_Repository
 {
     public class StreamingContentRepository
     {
-        private readonly List<StreamingContent> _contentDirectory = new List<StreamingContent>();
+        protected readonly List<StreamingContent> _contentDirectory = new List<StreamingContent>();
 
         // CRUD
         // Create
@@ -69,6 +69,23 @@ namespace _07_RepositoryPattern_Repository
             // Lambda Expression
             return GetContents().Where(s => s.IsFamilyFriendly).ToList();
         }
+
+        public List<StreamingContent> GetContentsByGenre(GenreType genre)
+        {
+            List<StreamingContent> content = GetContents();
+            List<StreamingContent> contentsByGenre = new List<StreamingContent>();
+            foreach (StreamingContent item in content)
+            {
+                if (item.GenreType == genre)
+                {
+                    contentsByGenre.Add(item);
+                }
+            }
+            return contentsByGenre;
+        }
+
+
+
 
         // Update
         public bool UpdateExistingContent(string originalTitle, StreamingContent newContent)

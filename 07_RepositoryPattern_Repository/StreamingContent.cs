@@ -61,5 +61,5 @@ namespace _07_RepositoryPattern_Repository
     }
 }
 
-public enum MaturityRating {G = 1, PG, R, PG13, NC17, TVMA, TVG, TVY }
+public enum MaturityRating {G = 1, PG, PG13, R, NC17, TVMA, TVG, TVY }
 public enum GenreType { SciFi = 1, Comedy, Horror, RomCom, Documentary, Western, Action}

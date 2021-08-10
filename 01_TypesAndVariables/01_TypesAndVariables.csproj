@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ResourceTypes.cs" />
+    <Compile Include="quiz.cs" />
     <Compile Include="ValueTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
