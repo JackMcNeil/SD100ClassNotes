@@ -36,6 +36,7 @@ namespace _11_StreamingContent_UIRefactor.UI
             _repo.AddContentToDirectory(sc1);
             _repo.AddContentToDirectory(sc2);
             _repo.AddContentToDirectory(sc3);
+            
         }
 
         public void Menu()
