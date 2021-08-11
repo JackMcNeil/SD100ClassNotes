@@ -12,7 +12,7 @@ namespace _07_RepositoryPattern_Repository
         public string Title { get { return _title; }
             set
             {
-                _title = value.ToUpper();
+                _title = value;
             }
         }
         public string Description { get; set; }

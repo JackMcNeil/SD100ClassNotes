@@ -22,6 +22,14 @@ namespace _09_StreamingContent_Console.UI
         public void SeedContent()
         {
             Console.WriteLine("Seeding contents...");
+
+            StreamingContent sc1 = new StreamingContent("National Treasure", "A treasure hunt for gold", 5, MaturityRating.PG13, GenreType.Documentary);
+            StreamingContent sc2 = new StreamingContent("Shrek", "A true love stroy", 4.5, MaturityRating.PG, GenreType.RomCom);
+            StreamingContent sc3 = new StreamingContent("Over the hedge", "Getting over the hedge", 5, MaturityRating.PG, GenreType.Action);
+
+            _repo.AddContentToDirectory(sc1);
+            _repo.AddContentToDirectory(sc2);
+            _repo.AddContentToDirectory(sc3);
         }
 
         public void Menu()
@@ -45,9 +53,11 @@ namespace _09_StreamingContent_Console.UI
                 {
                     case "1":
                         //Show all content
+                        DisplayAllContents();
                         break;
                     case "2":
                         //Find by title
+                        GetContentByTitle();
                         break;
                     case "3":
                         //Add new content
@@ -55,6 +65,7 @@ namespace _09_StreamingContent_Console.UI
                         break;
                     case "4":
                         // Remove content
+                        RemoveContent();
                         break;
                     case "5":
                     case "exit":
@@ -75,8 +86,55 @@ namespace _09_StreamingContent_Console.UI
             // Console.WriteLine("Press any key to exit the program... dude");
             // Console.ReadKey();
         }
+        
+        public void DisplayAllContents()
+        {
+            Console.Clear();
 
-        public void AddNewContent()
+            List<StreamingContent> contents = _repo.GetContents();
+
+            foreach (StreamingContent content in contents)
+            {
+                DisplayContent(content);
+            }
+
+            ContinueMessage();
+        }
+
+        public void GetContentByTitle()
+        {
+            Console.Clear();
+            Console.Write("Enter a title: ");
+            string title = Console.ReadLine();
+            
+            StreamingContent content = _repo.GetContentByTitle(title);
+
+            if(content == null)
+            {
+                Console.WriteLine("Content not found");
+            }
+            else
+            {
+                DisplayContent(content);
+            }
+
+            ContinueMessage();
+        }
+
+        public void DisplayContent(StreamingContent content)
+        {
+            Console.WriteLine($"{content.Title} ({content.MaturityRating}) - {content.Description}. {content.StarRating} {(content.StarRating == 1.0 ? "star" : "stars")}");
+        }
+
+        public void ContinueMessage()
+        {
+            Console.WriteLine("\nPress any key to continue...");
+            Console.ReadKey();
+        }
+
+
+
+        private void AddNewContent()
         {
             Console.Clear();
 
@@ -109,7 +167,7 @@ namespace _09_StreamingContent_Console.UI
             content.Description = string.IsNullOrWhiteSpace(description) ? "(No Description)" : description;
 
             // Star Rating
-            Console.Write("Star Rating (1-5): ");
+            Console.Write("Star Rating (0-5): ");
             double stars = double.Parse(Console.ReadLine());
             if (stars > 5)
             {
@@ -181,6 +239,40 @@ namespace _09_StreamingContent_Console.UI
             }
 
             _repo.AddContentToDirectory(content);
+        }
+
+
+        private void RemoveContent()
+        {
+            Console.Clear();
+            Console.WriteLine("Enter the title of item to remove: ");
+
+            string title = Console.ReadLine();
+
+            StreamingContent content = _repo.GetContentByTitle(title);
+
+            if (content == null)
+            {
+                Console.WriteLine("Content not found");
+            }
+            else
+            {
+                DisplayContent(content);
+                Console.WriteLine("Are you sure you want to delete this? y/n");
+
+                string answer = Console.ReadLine();
+                if (answer.ToLower() == "y" || answer.ToLower() == "yes")
+                {
+                    _repo.DeleteExistingContent(content);
+                    Console.WriteLine("Content removed!");
+                }
+                else
+                {
+                    Console.WriteLine("Nevermin then...");
+                }
+            }
+
+            ContinueMessage();
         }
     }
 }
