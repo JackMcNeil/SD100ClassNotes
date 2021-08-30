@@ -12,7 +12,6 @@ namespace _10_Interfaces
         public void CallingInterfaceMethods()
         {
             IFruit banana = new Banana();
-
             string output = banana.Peel();
             Console.WriteLine(output);
 

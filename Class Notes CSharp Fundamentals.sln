@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Interfaces", "10_Interfa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Interfaces_DI", "10_Interfaces_DI\10_Interfaces_DI.csproj", "{2EE4DB06-F29A-4DFE-95D5-B24F9E482FCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_StreamingContent_UIRefactor", "11_StreamingContent_UIRefactor\11_StreamingContent_UIRefactor.csproj", "{5509BC3D-B5C4-4D47-B952-BEE59284E042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_INtorToAPI", "12_INtorToAPI\12_INtorToAPI.csproj", "{BCF9199B-CAC4-471A-A26E-54BA0643B8AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{2EE4DB06-F29A-4DFE-95D5-B24F9E482FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EE4DB06-F29A-4DFE-95D5-B24F9E482FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EE4DB06-F29A-4DFE-95D5-B24F9E482FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5509BC3D-B5C4-4D47-B952-BEE59284E042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5509BC3D-B5C4-4D47-B952-BEE59284E042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5509BC3D-B5C4-4D47-B952-BEE59284E042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5509BC3D-B5C4-4D47-B952-BEE59284E042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF9199B-CAC4-471A-A26E-54BA0643B8AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF9199B-CAC4-471A-A26E-54BA0643B8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF9199B-CAC4-471A-A26E-54BA0643B8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF9199B-CAC4-471A-A26E-54BA0643B8AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

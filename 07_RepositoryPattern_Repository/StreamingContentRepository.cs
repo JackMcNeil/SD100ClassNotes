@@ -67,7 +67,7 @@ namespace _07_RepositoryPattern_Repository
             return familyFriendlyContents;
             // Fancy version using LINQ:
             // Lambda Expression
-            return GetContents().Where(s => s.IsFamilyFriendly).ToList();
+            // return GetContents().Where(s => s.IsFamilyFriendly).ToList();
         }
 
         public List<StreamingContent> GetContentsByGenre(GenreType genre)

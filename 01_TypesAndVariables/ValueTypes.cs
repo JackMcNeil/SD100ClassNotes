@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 
 namespace _01_TypesAndVariables
 {
@@ -70,6 +71,69 @@ namespace _01_TypesAndVariables
         {
             DateTime today = DateTime.Today;
             DateTime birthday = new DateTime(1998, 12, 22);
+        }
+
+        [TestMethod]
+        public void MyTestMethod()
+        {
+            int a = 7;
+            int b = 2;
+            int qoutiant = 7 / 3;
+            Console.WriteLine(a / b);
+        }
+
+        [TestMethod]
+        public void TimesTables()
+        {
+            for (int i = 1; i <= 5; i++)
+            {
+                for (int j = 1; j <= 12; j++)
+                {
+                    Console.WriteLine($"{i} X {j} = {i*j}");
+                }
+            }
+        }
+
+        [TestMethod]
+        public void check()
+        {
+            int[] allnums = { 1, 2, 3, 4, 5 };
+
+            int index = 0;
+
+            while (index <= 5)
+            {
+                Console.WriteLine($"Last index {allnums[index]}");
+                index++;
+            }
+        }
+
+        [TestMethod]
+        public void calc()
+        {
+            List<int> list = new List<int> { 5, 9, 7, 11 };
+            int largestNum = 0;
+            int secondNum = 0;
+            foreach(int num in list)
+            {
+                if (num > largestNum)
+                {
+                    if (largestNum > secondNum)
+                    {
+                        secondNum = largestNum;
+                        largestNum = num;
+                    }
+                    else
+                    {
+                        largestNum = num;
+                    }
+                }
+                else if(num > secondNum)
+                {
+                    secondNum = num;
+                }
+            }
+            Console.WriteLine(largestNum + secondNum);
         }
     }
 }

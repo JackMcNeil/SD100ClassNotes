@@ -70,4 +70,26 @@ namespace _10_Interfaces.Fruits
             return "Who peels grapes?";
         }
     }
+
+    public class Product
+    {
+        public string Name;
+        private int quantity;
+
+        public Product(string name, int quantity)
+        {
+            this.Name = name;
+            this.quantity = quantity;
+        }
+
+        public int Quantity { get { return quantity; } 
+            set
+            {
+                if (value < 1)
+                {
+                    quantity = 1;
+                }
+            }
+        }
+    }
 }

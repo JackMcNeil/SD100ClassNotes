@@ -268,7 +268,7 @@ namespace _09_StreamingContent_Console.UI
                 }
                 else
                 {
-                    Console.WriteLine("Nevermin then...");
+                    Console.WriteLine("Nevermind then...");
                 }
             }
 

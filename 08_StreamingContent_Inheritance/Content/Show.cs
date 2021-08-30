@@ -31,7 +31,7 @@ namespace _08_StreamingContent_Inheritance.Content
                 return totalRunTime / EpisodeCount;
 
                 // fancy way with linq
-                return Episodes.Select(e => e.RunTime).Sum() / EpisodeCount;
+                //return Episodes.Select(e => e.RunTime).Sum() / EpisodeCount;
             }
         }
 

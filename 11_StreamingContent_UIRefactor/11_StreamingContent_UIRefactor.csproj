@@ -7,7 +7,7 @@
     <ProjectGuid>{5509BC3D-B5C4-4D47-B952-BEE59284E042}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_11_StreamingContent_UIRefactor</RootNamespace>
-    <AssemblyName>_11_StreamingContent_UIRefactor</AssemblyName>
+    <AssemblyName>11_StreamingContent_UIRefactor</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,9 +45,23 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\FunConsole.cs" />
+    <Compile Include="UI\IConsole.cs" />
+    <Compile Include="UI\ProgramUI.cs" />
+    <Compile Include="UI\RealConsole.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\07_RepositoryPattern_Repository\07_RepositoryPattern_Repository.csproj">
+      <Project>{cd0d2670-77da-485a-895f-83a1a21fb3e6}</Project>
+      <Name>07_RepositoryPattern_Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\08_StreamingContent_Inheritance\08_StreamingContent_Inheritance.csproj">
+      <Project>{48ab3bf7-00cc-4798-93d1-91d1dcddc2cc}</Project>
+      <Name>08_StreamingContent_Inheritance</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
