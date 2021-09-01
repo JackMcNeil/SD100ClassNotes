@@ -28,7 +28,7 @@ namespace _14_RestaurantRater.Models
         {
             get
             {
-                return (FoodScore + AtmosphereScore + CleanlinessScore);
+                return (FoodScore + AtmosphereScore + CleanlinessScore) / 3;
             }
         }
 

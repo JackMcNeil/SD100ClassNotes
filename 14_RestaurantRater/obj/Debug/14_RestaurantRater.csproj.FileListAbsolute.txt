@@ -87,3 +87,7 @@ C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals
 C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\14_RestaurantRater\bin\EntityFramework.SqlServer.dll
 C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\14_RestaurantRater\bin\EntityFramework.xml
 C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\14_RestaurantRater\bin\EntityFramework.SqlServer.xml
+C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\14_RestaurantRater\obj\Debug\_14_RestaurantRater.Migrations.InitialCreate.resources
+C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\14_RestaurantRater\obj\Debug\14_RestaurantRater.csproj.GenerateResource.cache
+C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\14_RestaurantRater\obj\Debug\_14_RestaurantRater.Migrations.Initial.resources
+C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\14_RestaurantRater\obj\Debug\_14_RestaurantRater.Migrations.AddedRatingtoRestaurant.resources

@@ -169,9 +169,24 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109011431364_InitialCreate.cs" />
+    <Compile Include="Migrations\202109011431364_InitialCreate.designer.cs">
+      <DependentUpon>202109011431364_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109011725249_Initial.cs" />
+    <Compile Include="Migrations\202109011725249_Initial.designer.cs">
+      <DependentUpon>202109011725249_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109011812421_Added Rating to Restaurant.cs" />
+    <Compile Include="Migrations\202109011812421_Added Rating to Restaurant.designer.cs">
+      <DependentUpon>202109011812421_Added Rating to Restaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Rating.cs" />
+    <Compile Include="Models\RatingDisplay.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Models\RestaurantDBContext.cs" />
+    <Compile Include="Models\RestaurantDisplay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -257,6 +272,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202109011431364_InitialCreate.resx">
+      <DependentUpon>202109011431364_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109011725249_Initial.resx">
+      <DependentUpon>202109011725249_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109011812421_Added Rating to Restaurant.resx">
+      <DependentUpon>202109011812421_Added Rating to Restaurant.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
