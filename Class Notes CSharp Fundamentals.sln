@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_INtorToAPI", "12_INtorTo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_Async", "13_Async\13_Async.csproj", "{056488C9-8470-4478-AD80-F55E296B0161}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_RestaurantRater", "14_RestaurantRater\14_RestaurantRater.csproj", "{2322B042-F9ED-4ED0-BF7C-89670A5D891F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{056488C9-8470-4478-AD80-F55E296B0161}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{056488C9-8470-4478-AD80-F55E296B0161}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{056488C9-8470-4478-AD80-F55E296B0161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2322B042-F9ED-4ED0-BF7C-89670A5D891F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2322B042-F9ED-4ED0-BF7C-89670A5D891F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2322B042-F9ED-4ED0-BF7C-89670A5D891F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2322B042-F9ED-4ED0-BF7C-89670A5D891F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
