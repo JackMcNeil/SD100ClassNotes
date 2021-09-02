@@ -90,3 +90,4 @@ C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals
 C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\GeneralStoreAPI\obj\Debug\15_GeneralStoreAPI.csproj.GenerateResource.cache
 C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\GeneralStoreAPI\obj\Debug\GeneralStoreAPI.Migrations.second_migration.resources
 C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\GeneralStoreAPI\obj\Debug\15_GeneralStoreAPI.csproj.AssemblyReference.cache
+C:\Users\mcnei\Desktop\ElevenFiftyProjects\100SD\Class Notes CSharp Fundamentals\GeneralStoreAPI\obj\Debug\GeneralStoreAPI.Migrations.customerJoinDate.resources

@@ -177,8 +177,13 @@
     <Compile Include="Migrations\202109012054213_second_migration.designer.cs">
       <DependentUpon>202109012054213_second_migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109021532440_customerJoinDate.cs" />
+    <Compile Include="Migrations\202109021532440_customerJoinDate.designer.cs">
+      <DependentUpon>202109021532440_customerJoinDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerCreate.cs" />
     <Compile Include="Models\GeneralStoreDbContext.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductUpdate.cs" />
@@ -275,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109012054213_second_migration.resx">
       <DependentUpon>202109012054213_second_migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109021532440_customerJoinDate.resx">
+      <DependentUpon>202109021532440_customerJoinDate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -37,6 +37,18 @@ namespace GeneralStoreAPI.Controllers
             List<Product> products = await _context.Products.ToListAsync();
             return Ok(products);
         }
+
+        [HttpGet]
+        public async Task<IHttpActionResult> GetProductById([FromUri] int id)
+        {
+            Product product = await _context.Products.FindAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(product);
+        }
+
         // U 
         [HttpPut]
         [Route("api/Product/{id}/Update")]
@@ -85,6 +97,21 @@ namespace GeneralStoreAPI.Controllers
             return Ok();
         }
         // D
+        [HttpDelete]
+        public async Task<IHttpActionResult> DeleteProduct([FromUri] int id)
+        {
+            Product product = await _context.Products.FindAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            // This actaully deletes the product
+            _context.Products.Remove(product);
+            // You could just remove the product from the display method and not actually delete product from database
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
     }
 }
 
