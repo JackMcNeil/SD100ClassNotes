@@ -181,6 +181,8 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\GeneralStoreDbContext.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductUpdate.cs" />
+    <Compile Include="Models\Restock.cs" />
     <Compile Include="Models\Transaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
